@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Password Generator</title>
+<script src="script.js" defer></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+<div class="container">
+	<h1 class="title">Password Generator</h1>
+	<h3 class="final-password" id="finalPassword" onclick="copyClipboard()">Your new password will be here</h3>
+	<form class="form" id="passGenForm">
+		<label for="numberAmmount">Number of charaters</label>
+		<div class="ammount-container">
+		<input type="range" min="6" max="64" value="6" id="rangeAmmount">
+		<input type="number" min="6" max="64" value="6" id="numberAmmount" class="number-input">
+	</div>
+		<label for="isUppercase">Include Uppercase</label>
+		<input type="checkbox" id="isUppercase">
+		<label for="isNumbers">Include Numbers</label>
+		<input type="checkbox" id="isNumbers">
+		<label for="isSymbols">Include Symbols</label>
+		<input type="checkbox" id="isSymbols">
+		<button type="submit" class="btn">Generate Password</button>
+	</form>
+</div>
+</div>
+</body>
+</html>
